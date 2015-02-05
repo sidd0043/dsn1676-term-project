@@ -121,4 +121,8 @@ ch-thumb:after {
             background 0.2s linear 0s;
         transform:translateX(60px) rotate(90deg);
     }
+    
+       .ch-info p a:hover{
+        background:rgba(255,255,255,0.5);
+    }
  
