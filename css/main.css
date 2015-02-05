@@ -50,6 +50,16 @@ ch-thumb:after {
     box-shadow:0 0 1px rgba(255,255,255,0.9);
     
     .ch-img-1 {
-        background-image: url();
+        background-image:url();
         z-index: 12;
 }
+    
+    .ch-img-2 {
+        background-image:url();
+        z-index:11;
+    }
+    
+    .ch-img-3 {
+        background-image:url();
+        z-index:10;
+    }
