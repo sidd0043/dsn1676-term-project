@@ -57,20 +57,21 @@ html {
 }
 
 .ch-img-1 { 
-	background-image: url(../images/1.jpg);
+	background-image: url(../images/portfolio.svg);
+    background-repeat: no-repeat;
 }
 
 .ch-img-2 { 
-	background-image: url(../images/2.jpg);
+	background-image: url(../images/fish.svg);
 }
 
 .ch-img-3 { 
-	background-image: url(../images/3.jpg);
+	background-image: url(../images/logo.svg);
 }
 
 .ch-info {
 	position: absolute;
-	background: rgba(63,147,147, 0.8);
+	background: rgba(0,0,0,0.5);
 	width: inherit;
 	height: inherit;
 	border-radius: 50%;
