@@ -131,3 +131,7 @@ html {
 	transform: scale(1);
 	opacity: 1;
 }
+
+.ch-item:hover .ch-info p {
+	opacity: 1;
+}
