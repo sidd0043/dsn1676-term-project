@@ -133,3 +133,92 @@ html {
 .ch-item:hover .ch-info p {
 	opacity: 1;
 }
+
+@-webkit-keyframes img-rotate {
+    
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+     
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+} 
+
+@keyframes img-rotate {
+    
+    0% {
+        transform: rotate(0deg);
+    }
+     
+    100% {
+        transform: rotate(360deg);
+    }
+} 
+
+
+@-webkit-keyframes img-rotate {
+    
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+     
+    50% {
+        -webkit-transform: scale(1.2,1.2);
+    }
+    
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+} 
+
+@keyframes scale {
+ 
+    0% {
+        transform: scale(1,1);
+    }
+    
+    50% {
+        transform: scale(1.2,1.2);
+    }
+    
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+@keyframes scale {
+ 
+    0% {
+        transform: scale(1,1);
+    }
+    
+    50% {
+        transform: scale(1.2,1.2);
+    }
+    
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+.ch-img-1 {
+    background-image: url(../images/portfolio.svg);
+    background-repeat: no-repeat;
+    -webkit-animation: img-rotate 8s ease-in-out;
+    animation: img-rotate 8s ease-in-out;
+}
+
+.ch-img-2 {
+    background-image: url(../images/logo.svg);
+    background-repeat: no-repeat;
+    -webkit-animation: scale 8s ease-in-out;
+    animation: scale 8s ease-in-out; 
+}
+
+.ch-img-3 {
+    background-image: url(../images/fish.svg);
+    background-repeat: no-repeat;
+    -webkit-animation: img-rotate 8s ease-in-out alternate;  
+    animation: img-rotate 8s ease-in-out alternate;   
+}
