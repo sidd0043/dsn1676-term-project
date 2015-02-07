@@ -134,6 +134,27 @@ html {
 	opacity: 1;
 }
 
+.ch-img-1 {
+    background-image: url(../images/portfolio.svg);
+    background-repeat: no-repeat;
+    -webkit-animation: img-rotate 8s ease-in-out;
+    animation: img-rotate 8s ease-in-out;
+}
+
+.ch-img-2 {
+    background-image: url(../images/logo.svg);
+    background-repeat: no-repeat;
+    -webkit-animation: scale 8s ease-in-out;
+    animation: scale 8s ease-in-out; 
+}
+
+.ch-img-3 {
+    background-image: url(../images/fish.svg);
+    background-repeat: no-repeat;
+    -webkit-animation: img-rotate 8s ease-in-out alternate;  
+    animation: img-rotate 8s ease-in-out alternate;   
+}
+
 @-webkit-keyframes img-rotate {
     
     0% {
@@ -156,34 +177,18 @@ html {
     }
 } 
 
-
-@-webkit-keyframes img-rotate {
-    
+@-webkit-keyframes scale {
+ 
     0% {
-        -webkit-transform: rotate(0deg);
+        -webkit-transform: scale(1,1);
     }
-     
+    
     50% {
         -webkit-transform: scale(1.2,1.2);
     }
     
     100% {
-        -webkit-transform: rotate(360deg);
-    }
-} 
-
-@keyframes scale {
- 
-    0% {
-        transform: scale(1,1);
-    }
-    
-    50% {
-        transform: scale(1.2,1.2);
-    }
-    
-    100% {
-        transform: scale(1,1);
+        -webkit-transform: scale(1,1);
     }
 }
 
@@ -200,25 +205,4 @@ html {
     100% {
         transform: scale(1,1);
     }
-}
-
-.ch-img-1 {
-    background-image: url(../images/portfolio.svg);
-    background-repeat: no-repeat;
-    -webkit-animation: img-rotate 8s ease-in-out;
-    animation: img-rotate 8s ease-in-out;
-}
-
-.ch-img-2 {
-    background-image: url(../images/logo.svg);
-    background-repeat: no-repeat;
-    -webkit-animation: scale 8s ease-in-out;
-    animation: scale 8s ease-in-out; 
-}
-
-.ch-img-3 {
-    background-image: url(../images/fish.svg);
-    background-repeat: no-repeat;
-    -webkit-animation: img-rotate 8s ease-in-out alternate;  
-    animation: img-rotate 8s ease-in-out alternate;   
 }
