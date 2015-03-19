@@ -1,5 +1,5 @@
 var $toggle = $('.toggle');
-var $panel = $('.panel');
+var $panel = $('.navigation');
 
 var $btnMove = $('.btn-move');
 var $fish = $('.fish');
@@ -11,9 +11,17 @@ var $yarnMove = $('.yarn-move');
 var $btnMouse = $('.btn-mouse');
 var $mouse = $('.mouse');
 
+
+
+
 $toggle.on('click', function () {
-	$panel.toggleClass('js-panel-open');
+    $panel.toggleClass('js-panel-open');
 });
+
+
+
+
+
 
 $btnMove.on('click', function () {
     $fish.toggleClass('js-fish-move');
