@@ -1,3 +1,5 @@
+/* ------------------------------- Viewport Sizes ----------------------------- */
+
 @-moz-viewport {
     width: device-width;
     scale: 1;
@@ -22,6 +24,7 @@
     width: device-width;
     scale: 1;
 }
+/* ------------------------------- Main Layout ----------------------------- */
 
 html {
     box-sizing: border-box;
@@ -33,6 +36,11 @@ html {
     background-color: ghostwhite;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 *,
 *:before,
 *:after {
@@ -40,145 +48,148 @@ html {
 }
 
 body {
+    min-width: 320px;
+    max-width: 2500px;
+    margin: 0 auto;
     overflow-x: hidden;
-    margin: 0;
-    padding: 0;
+    font-family: 'Oswald', sans-serif;
 }
+
+header {
+    background-color: #7b2e17;
+    width: 100%;
+    font-size: 3em;
+    top: 0;
+    z-index: 100;
+}
+
+h1 {
+    color: #fff;
+    font-size: 2rem;
+    margin-left: 25px;
+}
+/* ------------------------------- Navigation ----------------------------- */
 
 .navigation {
     position: absolute;
     display: block;
-    left: 100%;
-    background-color: dimgrey;
-    margin: 0;
-    padding: 0;
+    width: 100%;
+    height: 0px;
+    background-color: #a84624;
     overflow: hidden;
-    transition: all 200ms ease;
-    /*    position: absolute left: 100%;*/
+    transition: all 500ms ease-in-out;
 }
 
-.nav-bars {
-    height: 212px;
+nav ul {
+    list-style-type: none;
+    background: #fff;
+    margin-top: 1rem;
 }
 
-.nav a,
-.nav a:link,
-.nav a:visited {
+nav li {
+    font-size: 1.5rem;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0.25rem;
+    padding: 0.5rem 20px;
+    background: #fdb813;
+}
+
+.js-navigation-open {
+    position: relative;
+    top: 0px;
+    z-index: 90;
+    height: 13rem;
+    transition: all 500ms ease-in-out;
+}
+
+nav a,
+nav a:link,
+nav a:visited {
     display: block;
     color: black;
     text-decoration: none;
 }
 
-.nav a:hover,
-.nav a:focus,
-.nav a:active,
-.nav .nav-current,
-.nav .nav-current:link,
-.nav .nav-current:visited {
+nav a:hover,
+nav a:focus,
+nav a:active,
+nav .nav-current,
+nav .nav-current:link,
+nav .nav-current:visited {
     color: white;
 }
 
 a {
     text-decoration: none;
     text-align: left;
-    padding-right: 10%;
-    color: black;
-    font-size: 25px;
     text-transform: uppercase;
-    font-weight: 100;
 }
 
-.arrow {
-    top: 50%;
-    width: 55px;
-}
-
-.logo {
-    width: 240px;
-    padding-top: 1em;
-    padding-left: none;
-    position: relative;
-    z-index: 1000;
-}
-
-.toggle {
+.nav-btn {
     margin-top: .1em;
     position: absolute;
+    z-index: 100;
     right: 5%;
     top: 20px;
     width: 50px;
     border: 1px;
 }
+/* ------------------------------- Buttons Navigation ----------------------------- */
 
-.panel {
-    background-color: aquamarine;
-    max-height: 0;
-    overflow: hidden;
-    transition: all 400ms linear;
-}
-
-.nav {
-    list-style-type: none;
-    background-color: white;
-    opacity: 50px;
-    color: orange;
-    margin-top: 80px;
-}
-
-.js-panel-open {
-    width: 15em;
-    background-color: dimgrey;
-    left: calc(100% - 15em);
-}
-
-.header {
-    background-color: beige;
+.buttons {
     width: 100%;
-    margin: 0;
-    padding: 0;
-    font-size: 3em;
-    top: 0;
-    z-index: 1000;
-    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    z-index: 100;
 }
 
-.btn-move {
-    color: black;
-    font-size: 20px;
+button {
+    width: 32%;
+    font-size: 1.25rem;
+    font-family: 'Oswald', sans-serif;
+    border-radius: 0;
+    border: none;
+    background: #fdb813;
     text-align: center;
-    background-color: white;
-    border: 2px solid black;
-    margin-top: 15px;
-    margin-left: 50%;
-    margin-right: 50%;
+}
+
+button:nth-child(2) {
+    width: 33%;
 }
 
 button:hover {
-    background-color: black;
-    border: 2px solid black;
+    color: #fff;
 }
+/* ------------------------------- CSS Transitions & Animations ----------------------------- */
 
-.fish-wrap {
-    overflow: hidden;
-    padding-top: 10px;
-}
-
-.fish {
-    background-image: url(../images/fish.svg);
-    background-repeat: repeat-x;
-    background-size: 120px auto;
-    height: 120px;
-    width: 120%;
+.wolverine {
+    background: url(../images/wolverine.svg) no-repeat center center;
+    background-size: contain;
+    height: 0rem;
+    width: auto;
     position: relative;
-    left: 0;
+    left: -100%;
+    transition: all 500ms ease-out;
 }
 
-.js-fish-move {
-    -webkit-animation: fish-move linear 1s infinite;
-    animation: fish-move linear 1s infinite;
+.js-wolverine-move {
+    height: 40rem;
+    left: 0%;
+    transition: all 500ms ease-out;
 }
 
-@-webkit-keyframes fish-move {
+@-webkit-keyframes wolverine-move {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 0%;
+    }
+}
+
+@keyframes wolverine-move {
     0% {
         left: 0;
     }
@@ -187,37 +198,7 @@ button:hover {
     }
 }
 
-@keyframes fish-move {
-    0% {
-        left: 0;
-    }
-    100% {
-        left: -120px;
-    }
-}
-
-.fish-wrap {
-    overflow: hidden;
-    padding-top: 10px;
-}
-
-.btn-roll {
-    color: black;
-    font-size: 20px;
-    text-align: center;
-    background-color: white;
-    border: 2px solid black;
-    margin-top: 15px;
-    margin-left: 50%;
-    margin-right: 50%;
-}
-
-.yarn-wrap {
-    overflow: hidden;
-    padding-top: 20px;
-}
-
-.yarn {
+.ball {
     background-image: url(../images/ball1.svg);
     background-repeat: no-repeat;
     background-size: 120px auto;
@@ -225,22 +206,34 @@ button:hover {
     width: 130px;
 }
 
-.yarn-move {
+.ball-move {
     position: relative;
     left: 100%;
 }
 
-.js-yarn-rotate {
-    -webkit-animation: yarn-rotate linear 2s infinite;
-    animation: yarn-rotate linear 2s infinite;
+.js-ball-rotate {
+    -webkit-animation: ball-rotate linear 2s infinite;
+    animation: ball-rotate linear 2s infinite;
 }
 
-.js-yarn-move {
-    -webkit-animation: yarn-move linear 8s infinite;
-    animation: yarn-move linear 8s infinite;
+.js-ball-move {
+    -webkit-animation: ball-move linear 2s infinite;
+    animation: ball-move linear 2s infinite;
 }
 
-@-webkit-keyframes yarn-rotate {
+@-webkit-keyframes ball-rotate {
+    0% {
+        transform: rotate(0deg)
+    }
+    40% {
+        transform: rotate(-270deg)
+    }
+    100% {
+        transform: rotate(-360deg)
+    }
+}
+
+@keyframes ball-rotate {
     0% {
         transform: rotate(0deg)
     }
@@ -249,16 +242,7 @@ button:hover {
     }
 }
 
-@keyframes yarn-rotate {
-    0% {
-        transform: rotate(0deg)
-    }
-    100% {
-        transform: rotate(-360deg)
-    }
-}
-
-@-webkit-keyframes yarn-move {
+@-webkit-keyframes ball-move {
     0% {
         left: 100%;
     }
@@ -267,7 +251,7 @@ button:hover {
     }
 }
 
-@keyframes yarn-move {
+@keyframes ball-move {
     0% {
         left: 100%;
     }
@@ -276,56 +260,60 @@ button:hover {
     }
 }
 
-.btn-mouse {
-    color: black;
-    font-size: 20px;
-    text-align: center;
-    background-color: white;
-    border: 2px solid black;
-    margin-top: 15px;
+.btn-collapse-expand {
+    margin-top: 190px;
     margin-left: 50%;
     margin-right: 50%;
 }
 
-.mouse-wrap {
-    overflow: hidden;
-    margin-top: 20px;
-}
-
-.mouse {
-    background-image: url(../img/mouse.svg);
-    background-repeat: no-repeat;
-    background-size: 120px auto;
-    height: 80px;
+.mike-tyson {
+    position: absolute;
     width: 100%;
-    position: relative;
-    left: -30%;
+    height: 0rem;
+    bottom: 0%;
+    left: 0%;
+    background: url(../images/Mike1.svg) no-repeat center center;
+    transition: all 500ms ease-out;
 }
 
-.js-mouse-move {
-    -webkit-animation: mouse-move linear 2s infinite;
-    animation: mouse-move linear 2s infinite;
+.js-mike-move {
+    z-index: 90;
+    height: 32.5rem;
+    transition: all 500ms ease-out;
 }
 
-@-webkit-keyframes mouse-move {
+@-webkit-keyframes mike-move {
     0% {
-        left: -30%;
+        left: 0%;
     }
     100% {
-        left: 120%;
+        left: 100%;
     }
 }
 
-@keyframes mouse-move {
+@keyframes mike-move {
     0% {
-        left: -30%;
+        left: 100%;
     }
     100% {
-        left: 120%;
+        left: -100%;
+    }
+}
+/* ------------------------------- Media Queries ----------------------------- */
+
+@media only screen and (min-width: 30em) {
+    nav li {
+        width: auto;
+        margin-bottom: 0;
+        padding: 0.5rem 25px;
+    }
+    .js-navigation-open {
+        height: 5.75rem;
     }
 }
 
-.mouse-wrap {
-    overflow: hidden;
-    padding-top: 10px;
+@media only screen and (min-width: 72.5em) {
+    .mike-tyson {
+        bottom: 0%;
+    }
 }

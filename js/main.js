@@ -1,37 +1,38 @@
-var $toggle = $('.toggle');
-var $panel = $('.navigation');
+var $navBtn = $('.nav-btn');
+var $nav = $('.navigation');
 
 var $btnMove = $('.btn-move');
-var $fish = $('.fish');
+var $wolverine = $('.wolverine');
 
 var $btnRoll = $('.btn-roll');
-var $yarn = $('.yarn');
-var $yarnMove = $('.yarn-move');
+var $ball = $('.ball');
+var $ballMove = $('.ball-move');
 
-var $btnMouse = $('.btn-mouse');
-var $mouse = $('.mouse');
+var $btnMoveInOut = $('.btn-move-in-out');
+var $mikeTyson = $('.mike-tyson');
+
+var $btnCollapseExpand = $('.btn-collapse-expand');
 
 
-
-
-$toggle.on('click', function () {
-    $panel.toggleClass('js-panel-open');
+$navBtn.on('click', function () {
+    $nav.toggleClass('js-navigation-open');
 });
-
 
 
 
 
 
 $btnMove.on('click', function () {
-    $fish.toggleClass('js-fish-move');
+    $wolverine.toggleClass('js-wolverine-move');
 });
+
 
 $btnRoll.on('click', function () {
-    $yarn.toggleClass('js-yarn-rotate');
-    $yarnMove.toggleClass('js-yarn-move');
+    $ball.toggleClass('js-ball-rotate');
+    $ballMove.toggleClass('js-ball-move');
 });
 
-$btnMouse.on('click', function () {
-    $mouse.toggleClass('js-mouse-move');
+
+$btnMoveInOut.on('click', function () {
+    $mikeTyson.toggleClass('js-mike-move');
 });
