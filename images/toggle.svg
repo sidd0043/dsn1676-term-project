@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 144 144" enable-background="new 0 0 144 144" xml:space="preserve">
-<rect x="4.5" y="4.5" fill="none" stroke="#231F20" stroke-width="3" stroke-miterlimit="10" width="133.8" height="133.8"/>
-<rect x="15.8" y="24.8" width="108.8" height="3.2"/>
-<rect x="15.8" y="70.8" width="108.8" height="3.2"/>
-<rect x="15.8" y="118.8" width="108.8" height="3.2"/>
+	 viewBox="16.6 104.4 545.9 545.9" enable-background="new 16.6 104.4 545.9 545.9" xml:space="preserve">
+<polygon fill="#FDB813" stroke="#FDB813" stroke-miterlimit="10" points="481.6,650.2 75.3,650.2 16.6,573.1 16.6,174.6 75.3,104.4 
+	481.6,104.4 562.5,174.6 562.5,572.4 "/>
+<polygon fill="#7D2F18" stroke="#7D2F18" stroke-width="0.8767" stroke-miterlimit="10" points="457.7,615.5 101.6,615.5 
+	50.1,547.9 50.1,198.6 101.6,137 457.7,137 528.7,198.6 528.7,547.3 "/>
+<rect x="99.3" y="359.2" fill="#FDB813" stroke="#FDB813" stroke-width="0.9372" stroke-miterlimit="10" width="356.8" height="27.1"/>
+<rect x="99.3" y="198.1" fill="#FDB813" stroke="#FDB813" stroke-width="0.9372" stroke-miterlimit="10" width="356.8" height="27.1"/>
+<rect x="99.3" y="522.3" fill="#FDB813" stroke="#FDB813" stroke-width="0.9372" stroke-miterlimit="10" width="356.8" height="27.1"/>
 </svg>
