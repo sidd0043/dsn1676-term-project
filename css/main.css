@@ -166,18 +166,12 @@ button:hover {
 
 .wolverine {
     background: url(../images/wolverine.svg) no-repeat center center;
-    /*background-size: contain;
+    background-size: contain;
     height: 0rem;
     width: auto;
     position: relative;
     left: -100%;
-    transition: all 500ms ease-out;*/
-    
-    position: absolute;
-    width: 100%;
-    height: 0rem;
-    bottom: 10%;
-    left: 0%;
+    transition: all 500ms ease-out;
 }
 
 .js-wolverine-move {
@@ -284,7 +278,7 @@ button:hover {
 
 .js-mike-move {
     z-index: 90;
-    height: 5rem;
+    height: 25rem;
     transition: all 500ms ease-out;
 }
 
