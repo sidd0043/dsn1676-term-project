@@ -278,7 +278,7 @@ button:hover {
 
 .js-mike-move {
     z-index: 90;
-    height: 32.5rem;
+    height: 30rem;
     transition: all 500ms ease-out;
 }
 
