@@ -36,3 +36,7 @@ $btnRoll.on('click', function () {
 $btnMoveInOut.on('click', function () {
     $mikeTyson.toggleClass('js-mike-move');
 });
+
+$('.navigation').localScroll({
+    target: 'body'
+});
