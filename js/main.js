@@ -40,3 +40,7 @@ $btnMoveInOut.on('click', function () {
 $('.navigation').localScroll({
     target: 'body'
 });
+
+$('.test').localScroll({
+    target: 'body'
+});
