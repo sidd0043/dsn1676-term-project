@@ -327,6 +327,40 @@ button:hover {
     margin-left: calc(50% - 204px);
 }
 
+#tire1 {
+    -webkit-animation: scale 1s linear infinite;
+    animation: scale 1s linear infinite;
+}
+
+#tire2 {
+    -webkit-animation: scale 1s linear infinite;
+    animation: scale 1s linear infinite;
+}
+
+@-webkit-keyframes scale {
+    0% {
+        -webkit-transform: scale(1, 1);
+    }
+    50% {
+        -webkit-transform: scale(0.8, 0.8);
+    }
+    100% {
+        -webkit-transform: scale(1, 1);
+    }
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(0.8, 0.8);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+/*
 #light {
     opacity: 0;
     transition: all 1s linear;
@@ -335,6 +369,7 @@ button:hover {
 .js-active #light {
     opacity: 1;
 }
+*/
 /* ------------------------------- Media Queries ----------------------------- */
 
 @media only screen and (min-width: 30em) {
