@@ -332,7 +332,17 @@ button:hover {
     animation: scale 1s linear infinite;
 }
 
+#rim1 {
+    -webkit-animation: scale 1s linear infinite;
+    animation: scale 1s linear infinite;
+}
+
 #tire2 {
+    -webkit-animation: scale 1s linear infinite;
+    animation: scale 1s linear infinite;
+}
+
+#rim2 {
     -webkit-animation: scale 1s linear infinite;
     animation: scale 1s linear infinite;
 }
