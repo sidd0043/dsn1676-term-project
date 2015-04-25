@@ -398,7 +398,9 @@ h3 {
     height: 50px;
     background: url(../images/toTopBtn.svg) no-repeat center center;
     background-size: contain;
+    color: transparent;
     position: absolute;
+    font-size: 1px;
     right: 0;
     z-index: 20;
 }
@@ -408,10 +410,6 @@ h3 {
     left: 190px;
     bottom: 0;
     z-index: 0;
-}
-
-.toTop a {
-    color: transparent;
 }
 
 h4 {
