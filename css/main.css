@@ -42,7 +42,7 @@ html {
 }
 
 .effects {
-    min-height: 40em;
+    min-height: 43em;
 }
 
 body {
@@ -75,10 +75,15 @@ p {
     padding-top: 0.5rem;
 }
 
+.h2 {
+    font-size: 15rem;
+    line-height: 0;
+}
+
 h2 {
     text-align: center;
     margin-top: 5rem;
-    font-size: 9rem;
+    font-size: 5rem;
 }
 /* ------------------------------- Navigation ----------------------------- */
 
@@ -179,20 +184,7 @@ button {
 }
 
 .buttons button:hover {
-    background: #fff;
-}
-
-.toTop {
-    width: 50px;
-    height: 50px;
-    background: url(../images/toTopBtn.svg) no-repeat center center;
-    background-size: contain;
-    position: absolute;
-    right: 0;
-}
-
-.toTop a {
-    color: transparent;
+    background: #000;
 }
 /* ------------------------------- CSS Transitions & Animations ----------------------------- */
 
@@ -334,12 +326,6 @@ button {
     }
 }
 
-.car {
-    position: absolute;
-    left: 190px;
-    bottom: 0;
-}
-
 @-webkit-keyframes rotate {
     0% {
         -webkit-transform: rotate(0deg);
@@ -407,6 +393,27 @@ h3 {
     font-family: 'Lato', sans-serif;
 }
 
+.toTop {
+    width: 50px;
+    height: 50px;
+    background: url(../images/toTopBtn.svg) no-repeat center center;
+    background-size: contain;
+    position: absolute;
+    right: 0;
+    z-index: 20;
+}
+
+.car {
+    position: absolute;
+    left: 190px;
+    bottom: 0;
+    z-index: 0;
+}
+
+.toTop a {
+    color: transparent;
+}
+
 h4 {
     font-family: 'Oswald', sans-serif;
     text-align: right;
@@ -415,6 +422,8 @@ h4 {
     padding-top: 0.5rem;
     margin-right: 65px;
     height: 5px;
+    position: relative;
+    z-index: 10;
 }
 
 footer {
@@ -446,6 +455,13 @@ footer {
     }
 }
 
+@media only screen and (min-width: 45em) {
+    h2,
+    .h2 {
+        font-size: 9rem;
+    }
+}
+
 @media only screen and (min-width: 58.65em) {
     .car {}
 }
@@ -456,8 +472,5 @@ footer {
     }
     .wolverine {
         bottom: 0%;
-    }
-    h2 {
-        font-size: 9rem;
     }
 }
