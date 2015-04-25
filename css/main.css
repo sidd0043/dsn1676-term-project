@@ -84,7 +84,7 @@ h2 {
 
 #skip-navigation-link {
     position: absolute;
-    left: -100%;
+    left: -1000%;
 }
 
 .navigation {
@@ -168,7 +168,7 @@ a {
 }
 
 button {
-    width: 33.1%;
+    width: 100%;
     font-size: 1.25rem;
     font-family: 'Oswald', sans-serif;
     border-radius: 0;
@@ -374,7 +374,7 @@ button {
 }
 
 article {
-    width: 49%;
+    width: 100%;
 }
 
 h3 {
@@ -420,10 +420,17 @@ h4 {
 footer {
     position: relative;
     clear: both;
+    clear: both;
     height: 50px;
     background: #7b2e17;
 }
 /* ------------------------------- Media Queries ----------------------------- */
+
+@media only screen and (min-width: 28.45em) {
+    article {
+        width: 49%;
+    }
+}
 
 @media only screen and (min-width: 30em) {
     nav li {
@@ -434,6 +441,13 @@ footer {
     .js-navigation-open {
         height: 5.75rem;
     }
+    .buttons button {
+        width: 32%;
+    }
+}
+
+@media only screen and (min-width: 58.65em) {
+    .car {}
 }
 
 @media only screen and (min-width: 72.5em) {
@@ -442,5 +456,8 @@ footer {
     }
     .wolverine {
         bottom: 0%;
+    }
+    h2 {
+        font-size: 9rem;
     }
 }
