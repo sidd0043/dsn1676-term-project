@@ -42,7 +42,7 @@ html {
 }
 
 .effects {
-    min-height: 50em;
+    min-height: 40em;
 }
 
 body {
@@ -73,6 +73,12 @@ p {
     font-size: 90% bold;
     overflow: hidden;
     padding-top: 0.5rem;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 9rem;
 }
 /* ------------------------------- Navigation ----------------------------- */
 
@@ -158,24 +164,22 @@ a {
     position: absolute;
     bottom: 0;
     z-index: 100;
+    background: #fdb813;
 }
 
 button {
-    width: 32%;
+    width: 33.1%;
     font-size: 1.25rem;
     font-family: 'Oswald', sans-serif;
     border-radius: 0;
     border: none;
     background: #fdb813;
     text-align: center;
-}
-
-button:nth-child(2) {
-    width: 33%;
+    color: #fff;
 }
 
 .buttons button:hover {
-    color: #fff;
+    background: #fff;
 }
 
 .toTop {
@@ -308,7 +312,7 @@ button:nth-child(2) {
 
 .js-mike-move {
     z-index: 90;
-    height: 30rem;
+    height: 35rem;
     transition: all 500ms ease-out;
 }
 
@@ -331,31 +335,9 @@ button:nth-child(2) {
 }
 
 .car {
-    margin-left: calc(50% - 204px);
-}
-
-#tire1 {
-    -webkit-animation: rotate 1s linear infinite;
-    animation: rotate 1s linear infinite;
-    transform-origin: 50% 50%;
-}
-
-#rim1 {
-    -webkit-animation: rotate 1s linear infinite;
-    animation: rotate 1s linear infinite;
-    transform-origin: 50% 50%;
-}
-
-#tire2 {
-    -webkit-animation: rotate 1s linear infinite;
-    animation: rotate 1s linear infinite;
-    transform-origin: 50% 50%;
-}
-
-#rim2 {
-    -webkit-animation: rotate 1s linear infinite;
-    animation: rotate 1s linear infinite;
-    transform-origin: 50% 50%;
+    position: absolute;
+    left: 190px;
+    bottom: 0;
 }
 
 @-webkit-keyframes rotate {
@@ -376,27 +358,23 @@ button:nth-child(2) {
     }
 }
 
-#light {
+#Light {
     opacity: 0;
-    transition: all 1s linear;
+    transition: all 2s linear;
 }
 
-.js-active #light {
+.js-active {
     opacity: 1;
 }
 /* ------------------------------- Footer ----------------------------- */
 
 .extra-information {
-    width: 48%;
-    height: 9.5rem;
-    background: #fdb813;
-    padding: 1rem 0.5%;
-    float: left;
-    margin-bottom: 1rem;
+    width: 98%;
+    padding: 1rem 1%;
 }
 
-.float-right {
-    float: right;
+article {
+    width: 49%;
 }
 
 h3 {
@@ -405,10 +383,23 @@ h3 {
     border-bottom: 1px solid #000;
 }
 
+#contact {
+    float: left;
+}
+
 #contact ul li {
     color: #000;
     font-family: 'Lato', sans-serif;
     list-style: none;
+}
+
+#aboutme {
+    float: right;
+}
+
+#aboutme h3,
+#aboutme p {
+    text-align: right;
 }
 
 #aboutme p {
@@ -416,21 +407,18 @@ h3 {
     font-family: 'Lato', sans-serif;
 }
 
-.float-right h3,
-.float-right p {
-    text-align: right;
-}
-
 h4 {
     font-family: 'Oswald', sans-serif;
-    text-align: center;
+    text-align: right;
     text-transform: uppercase;
     color: #fff;
     padding-top: 0.5rem;
+    margin-right: 65px;
     height: 5px;
 }
 
 footer {
+    position: relative;
     clear: both;
     height: 50px;
     background: #7b2e17;
