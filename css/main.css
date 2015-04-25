@@ -177,6 +177,19 @@ button:nth-child(2) {
 .buttons button:hover {
     color: #fff;
 }
+
+.toTop {
+    width: 50px;
+    height: 50px;
+    background: url(../images/toTopBtn.svg) no-repeat center center;
+    background-size: contain;
+    position: absolute;
+    right: 0;
+}
+
+.toTop a {
+    color: transparent;
+}
 /* ------------------------------- CSS Transitions & Animations ----------------------------- */
 
 .wolverine {
@@ -371,35 +384,56 @@ button:nth-child(2) {
 .js-active #light {
     opacity: 1;
 }
-/* ------------------------------- Extra Information ----------------------------- */
+/* ------------------------------- Footer ----------------------------- */
 
 .extra-information {
     width: 48%;
-    height: inherit;
-    background: black;
+    height: 9.5rem;
+    background: #fdb813;
     padding: 1rem 0.5%;
     float: left;
+    margin-bottom: 1rem;
 }
 
-.extra-information:last-child {
+.float-right {
     float: right;
 }
 
 h3 {
-    color: #fff;
+    color: #000;
     font-size: 2rem;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #000;
 }
 
 #contact ul li {
-    color: #fff;
+    color: #000;
     font-family: 'Lato', sans-serif;
     list-style: none;
 }
 
 #aboutme p {
-    color: #fff;
+    color: #000;
     font-family: 'Lato', sans-serif;
+}
+
+.float-right h3,
+.float-right p {
+    text-align: right;
+}
+
+h4 {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    padding-top: 0.5rem;
+    height: 5px;
+}
+
+footer {
+    clear: both;
+    height: 50px;
+    background: #7b2e17;
 }
 /* ------------------------------- Media Queries ----------------------------- */
 
