@@ -41,12 +41,6 @@ html {
     padding: 0;
 }
 
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-}
-
 .effects {
     min-height: 50em;
 }
@@ -89,6 +83,11 @@ p {
 }
 /* ------------------------------- Navigation ----------------------------- */
 
+#skip-navigation-link {
+    position: absolute;
+    left: -100%;
+}
+
 .navigation {
     position: absolute;
     display: block;
@@ -98,6 +97,7 @@ p {
     overflow: hidden;
     transition: all 500ms ease-in-out;
     padding-bottom: 1em;
+    box-sizing: border-box;
 }
 
 nav ul {
@@ -120,7 +120,7 @@ nav li {
     position: relative;
     top: 0px;
     z-index: 90;
-    height: 13rem;
+    height: 16rem;
     transition: all 500ms ease-in-out;
 }
 
@@ -148,14 +148,15 @@ a {
 }
 
 .nav-btn {
-    /*    margin-top: .1em;*/
-    
+    background: url(../images/toggle.svg) no-repeat center center;
+    background-size: contain;
     position: absolute;
+    color: transparent;
     z-index: 100;
     right: 5%;
     top: 14px;
     width: 50px;
-    border: 1px;
+    height: 40px;
 }
 /* ------------------------------- Buttons Navigation ----------------------------- */
 
@@ -180,7 +181,7 @@ button:nth-child(2) {
     width: 33%;
 }
 
-button:hover {
+.buttons button:hover {
     color: #fff;
 }
 /* ------------------------------- CSS Transitions & Animations ----------------------------- */
